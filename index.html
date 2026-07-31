@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce API for Automated Buying &amp; Tracking | Zinc</title>
+    <meta name="description" content="Zinc is infrastructure for developers to search products, place orders, and track shipments through one API. Automate your buying process. Start building now!">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Announcement Banner -->
+    <div class="top-announcement-banner">
+        <span class="badge-new">NEW</span>
+        Try the <a href="https://agent.zinc.com" target="_blank">Zinc Agent</a> — let your agent buy anything online
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-symbol">&lt;/&gt;</span> Zinc
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#use-cases">Use Cases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.zinc.com" target="_blank">Docs</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="nav-link">Login</a>
+                    <a href="#" class="btn-zinc-primary">Start Building</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container py-4">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6">
+                    <span class="section-tag">// E-COMMERCE INFRASTRUCTURE</span>
+                    <h1 class="mb-4">E-commerce API for Automated Buying &amp; Tracking</h1>
+                    <p class="hero-lead mb-4">
+                        Zinc is infrastructure for developers to search products, place orders, and track shipments across major retailers with a single API.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#" class="btn-zinc-primary">
+                            Start Building Free <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <a href="https://docs.zinc.com" target="_blank" class="btn-zinc-outline">
+                            Read API Docs
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center gap-4 text-secondary fs-6">
+                        <span><i class="bi bi-check2 text-info me-1"></i> No Credit Card Required</span>
+                        <span><i class="bi bi-check2 text-info me-1"></i> Amazon, Walmart, Target &amp; More</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Terminal Code Editor -->
+                    <div class="code-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="terminal-dot dot-red"></span>
+                                <span class="terminal-dot dot-yellow"></span>
+                                <span class="terminal-dot dot-green"></span>
+                            </div>
+                            <div class="terminal-tabs">
+                                <button class="terminal-tab active" data-lang="curl">cURL</button>
+                                <button class="terminal-tab" data-lang="node">Node.js</button>
+                                <button class="terminal-tab" data-lang="python">Python</button>
+                            </div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre id="terminal-code-display"><code><span class="code-comment"># Search products &amp; place automated order via Zinc API</span>
+<span class="code-function">curl</span> -X POST https://api.zinc.com/v1/orders \
+  -H <span class="code-string">"Authorization: Bearer znc_live_849204829104"</span> \
+  -H <span class="code-string">"Content-Type: application/json"</span> \
+  -d '{
+    <span class="code-keyword">"retailer"</span>: <span class="code-string">"amazon"</span>,
+    <span class="code-keyword">"product_id"</span>: <span class="code-string">"B08N5WRWNW"</span>,
+    <span class="code-keyword">"max_price"</span>: <span class="code-number">149.99</span>,
+    <span class="code-keyword">"shipping_address"</span>: {
+      <span class="code-keyword">"first_name"</span>: <span class="code-string">"Alex"</span>,
+      <span class="code-keyword">"last_name"</span>: <span class="code-string">"Morgan"</span>,
+      <span class="code-keyword">"address_line1"</span>: <span class="code-string">"100 Market St"</span>,
+      <span class="code-keyword">"city"</span>: <span class="code-string">"San Francisco"</span>,
+      <span class="code-keyword">"state"</span>: <span class="code-string">"CA"</span>,
+      <span class="code-keyword">"zip_code"</span>: <span class="code-string">"94105"</span>
+    }
+  }'</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Capabilities -->
+    <section class="section-padding" id="products">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag">// EVERYTHING IN ONE API</span>
+                <h2 class="display-6 fw-bold mb-3 text-white">Full-Stack Buying Infrastructure</h2>
+                <p class="text-secondary mx-auto" style="max-width: 600px;">
+                    Build robust e-commerce applications with enterprise-grade reliability and seamless merchant integrations.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="zinc-card">
+                        <div class="card-icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <h3>Universal Product Search</h3>
+                        <p>Search across millions of products from Amazon, Walmart, Target, and eBay with unified schema &amp; real-time pricing.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="zinc-card">
+                        <div class="card-icon">
+                            <i class="bi bi-cart-check"></i>
+                        </div>
+                        <h3>Automated Checkout</h3>
+                        <p>Place orders programmatically with built-in payment processing, anti-bot mitigation, and automatic retries.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="zinc-card">
+                        <div class="card-icon">
+                            <i class="bi bi-box-seam"></i>
+                        </div>
+                        <h3>Real-time Tracking</h3>
+                        <p>Receive webhooks for order status, tracking numbers, carrier updates, and delivery confirmations automatically.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="zinc-card">
+                        <div class="card-icon">
+                            <i class="bi bi-shield-network"></i>
+                        </div>
+                        <h3>Global Proxy Network</h3>
+                        <p>Built-in proxy infrastructure ensuring 99.9% success rate without blocking or IP rate limits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases & Solutions -->
+    <section class="section-padding bg-slate-900 border-top border-bottom border-slate-800" id="use-cases">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6">
+                    <span class="section-tag">// BUILT FOR MODERN DEVELOPERS</span>
+                    <h2 class="display-6 fw-bold text-white mb-4">Powering Next-Gen E-commerce Applications</h2>
+                    
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex gap-3">
+                            <div class="fs-4 text-info"><i class="bi bi-robot"></i></div>
+                            <div>
+                                <h4 class="h5 text-white mb-1">AI Shopping Agents</h4>
+                                <p class="text-secondary mb-0">Empower LLMs and AI agents to autonomously find products, check prices, and complete purchases for users.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="fs-4 text-info"><i class="bi bi-arrow-repeat"></i></div>
+                            <div>
+                                <h4 class="h5 text-white mb-1">Procurement &amp; Dropshipping</h4>
+                                <p class="text-secondary mb-0">Automate order fulfillment from suppliers directly to customers with zero manual intervention.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="fs-4 text-info"><i class="bi bi-graph-up"></i></div>
+                            <div>
+                                <h4 class="h5 text-white mb-1">Price Comparison &amp; Intelligence</h4>
+                                <p class="text-secondary mb-0">Track competitor inventory, dynamic pricing, and buy-box status at scale across platforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="metric-box">
+                                <div class="metric-number text-info">10M+</div>
+                                <div class="text-secondary fs-6">Orders Processed</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="metric-box">
+                                <div class="metric-number text-success">99.99%</div>
+                                <div class="text-secondary fs-6">API Uptime</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="metric-box">
+                                <div class="metric-number text-warning">&lt; 50ms</div>
+                                <div class="text-secondary fs-6">Average Request Response Latency</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="cta-banner">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <span class="section-tag">// READY TO AUTOMATE?</span>
+                        <h2 class="display-6 fw-bold text-white mb-3">Start Building with Zinc API Today</h2>
+                        <p class="text-secondary mb-0">
+                            Get instant access to live credentials and start placing automated e-commerce orders in minutes.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="#" class="btn-zinc-primary me-2">
+                            Create Account <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white mb-3" href="index.html">
+                        <span class="logo-symbol">&lt;/&gt;</span> Zinc
+                    </a>
+                    <p class="text-muted pe-lg-4">
+                        Infrastructure for developers to search products, place orders, and track shipments through one API.
+                    </p>
+                    <div class="status-badge mb-3">
+                        <span class="status-dot"></span> All Systems Operational
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="#products">Product Search</a></li>
+                        <li><a href="#products">Automated Checkout</a></li>
+                        <li><a href="#products">Order Tracking</a></li>
+                        <li><a href="https://agent.zinc.com" target="_blank">Zinc Agent</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Developers</h5>
+                    <ul>
+                        <li><a href="https://docs.zinc.com" target="_blank">Documentation</a></li>
+                        <li><a href="https://docs.zinc.com" target="_blank">API Reference</a></li>
+                        <li><a href="https://github.com" target="_blank">SDK Libraries</a></li>
+                        <li><a href="#">Status Page</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Company &amp; Connect</h5>
+                    <p class="text-muted">Stay up to date with Zinc API releases and features.</p>
+                    <div class="d-flex gap-3 fs-5">
+                        <a href="https://twitter.com/zincdotcom" target="_blank" title="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://github.com" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:support@zinc.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-slate-800 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="mb-0 text-muted">&copy; 2026 Zinc Inc. All rights reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-muted">Privacy Policy</a>
+                    <a href="#" class="text-muted">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
